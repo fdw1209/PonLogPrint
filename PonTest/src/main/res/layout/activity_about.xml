@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    n1:background="@color/activity_bg"
+    n1:orientation="vertical"
+    tools:context=".activity.AboutActivity">
+
+    <include layout="@layout/fragment_title" />
+
+    <ImageView
+        n1:layout_width="96.0dip"
+        n1:layout_height="96.0dip"
+        n1:layout_gravity="center"
+        n1:layout_marginTop="43.0dip"
+        n1:src="@mipmap/ic_launcher" />
+
+    <TextView
+        n1:id="@id/about_version"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_gravity="center"
+        n1:layout_marginTop="20.0dip"
+        n1:text="光猫Log V1.0"
+        n1:textColor="@color/table_wifi_text"
+        n1:textSize="@dimen/text_16sp" />
+
+    <View
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0px"
+        n1:layout_marginTop="29.0dip"
+        n1:background="@color/divider" />
+
+    <RelativeLayout
+        n1:id="@id/about_privacy"
+        n1:layout_width="fill_parent"
+        n1:layout_height="39.0dip"
+        n1:background="@color/white">
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerVertical="true"
+            n1:layout_marginStart="20.0dip"
+            n1:text="使用说明"
+            n1:textColor="@color/table_wifi_text"
+            n1:textSize="@dimen/text_14sp" />
+
+        <ImageView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentEnd="true"
+            n1:layout_centerInParent="true"
+            n1:layout_marginEnd="20.0dip"
+            n1:src="@mipmap/icon_more" />
+    </RelativeLayout>
+
+    <View
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0px"
+        n1:background="@color/divider" />
+
+    <RelativeLayout
+        n1:id="@id/about_mail"
+        n1:layout_width="fill_parent"
+        n1:layout_height="39.0dip"
+        n1:background="@color/white">
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerVertical="true"
+            n1:layout_marginStart="20.0dip"
+            n1:text="用户服务邮箱"
+            n1:textColor="@color/table_wifi_text"
+            n1:textSize="@dimen/text_14sp" />
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentEnd="true"
+            n1:layout_centerInParent="true"
+            n1:layout_marginEnd="20.0dip"
+            n1:text="dingwei.fang@changhong.com"
+            n1:textColor="@color/find_ap_ssid"
+            n1:textSize="@dimen/text_14sp" />
+    </RelativeLayout>
+
+    <View
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0px"
+        n1:background="@color/divider" />
+
+    <RelativeLayout
+        n1:id="@id/about_phone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="39.0dip"
+        n1:background="@color/white">
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerVertical="true"
+            n1:layout_marginStart="20.0dip"
+            n1:text="技术支持热线电话"
+            n1:textColor="@color/table_wifi_text"
+            n1:textSize="@dimen/text_14sp" />
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentEnd="true"
+            n1:layout_centerInParent="true"
+            n1:layout_marginEnd="20.0dip"
+            n1:text="0816-2418537"
+            n1:textColor="@color/find_ap_ssid"
+            n1:textSize="@dimen/text_14sp" />
+    </RelativeLayout>
+
+    <View
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0px"
+        n1:background="@color/divider" />
+
+    <TextView
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:gravity="bottom|center"
+        n1:paddingBottom="10.0dip"
+        n1:text="版权所有©长虹网络科技有限责任公司"
+        n1:textColor="#993a3d42"
+        n1:textSize="@dimen/text_12sp" />
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">光猫Log</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="find_telnet">Telnet</string>
+    <string name="find_ap_my_wifi">已连接</string>
+    <string name="my">我的</string>
+    <string name="open_gps_notify_title">提示</string>
+    <string name="setting">设置</string>
+    <string name="srl_footer_loading">Loading…</string>
+    <string name="srl_header_loading">Loading…</string>
+    <string name="logs">日志</string>
+    <string name="wifi">Telnet</string>
+    <string name="OLT_register">OLT注册</string>
+    <string name="wifi_connect">检测到尚未连接WiFi，无法使用当前功能，是否立即连接？</string>
+    <string name="telnet_connect">修改</string>
+    <string name="plugin_platform">插件平台</string>
+    <string name="RMS_table">RMS平台</string>
+    <string name="web_config">WEB配置</string>
+    <string name="wifidisable">检测到尚未打开WLAN开关，无法使用当前功能，是否立即打开？</string>
+    <string name="ip">192.168.1.1</string>
+    <string name="port">23</string>
+    <string name="username">CMCCAdmin</string>
+    <string name="password">aDm8H%MdA</string>
+    <!--<string name="username">root</string>-->
+    <!--<string name="password">Pon521</string>-->
+    <string name="empty_content">Log内容为空</string>
+    <string name="success">Log保存成功</string>
+    <string name="fail">Log保存失败</string>
+    <string name="file_empty">文件名为空</string>
+    <string name="read_success">读取Log成功</string>
+    <string name="read_fail">读取Log失败</string>
+</resources>

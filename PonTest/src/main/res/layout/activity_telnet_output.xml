@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    n1:background="@color/white"
+    n1:orientation="vertical"
+    tools:context=".activity.TelnetOutputActivity">
+
+    <include layout="@layout/fragment_title" />
+    <ScrollView
+        n1:id="@id/telnet_output_sv"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_weight="1.0"
+        n1:background="@color/telnet_output_color"
+        n1:fadingEdge="vertical"
+        n1:scrollbars="vertical">
+
+        <TextView
+            n1:id="@id/telnet_output"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginEnd="@dimen/text_12sp"
+            n1:layout_marginStart="@dimen/text_12sp"
+            n1:gravity="start"
+            n1:singleLine="false"
+            n1:textColor="@color/white"
+            n1:textSize="@dimen/text_12sp" />
+    </ScrollView>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:background="@color/activity_bg"
+        n1:orientation="vertical">
+
+        <LinearLayout
+            n1:id="@id/telnet_cmd_layout"
+            n1:layout_width="fill_parent"
+            n1:layout_height="51.0dip"
+            n1:background="@color/find_ap_search"
+            n1:orientation="horizontal">
+
+            <LinearLayout
+                n1:layout_width="0.0dip"
+                n1:layout_height="33.0dip"
+                n1:layout_marginBottom="8.0dip"
+                n1:layout_marginEnd="13.0dip"
+                n1:layout_marginStart="11.0dip"
+                n1:layout_marginTop="8.0dip"
+                n1:layout_weight="1.0"
+                n1:background="@drawable/search_ap_bg"
+                n1:orientation="horizontal">
+
+                <EditText
+                    n1:id="@id/telnet_cmd_input"
+                    n1:layout_width="0.0dip"
+                    n1:layout_height="wrap_content"
+                    n1:layout_gravity="center_vertical"
+                    n1:layout_marginStart="5.0dip"
+                    n1:layout_weight="1.0"
+                    n1:background="@null"
+                    n1:gravity="center"
+                    n1:imeOptions="actionSend"
+                    n1:inputType="text"
+                    n1:textColor="@color/blank"
+                    n1:textColorHint="@color/table_text_color_uncheck"
+                    n1:textSize="@dimen/text_14dp" />
+
+                <ImageView
+                    n1:id="@id/telnet_cmd_delete"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_gravity="center_vertical"
+                    n1:layout_marginEnd="13.0dip"
+                    n1:layout_marginStart="5.0dip"
+                    n1:padding="10.0dip"
+                    n1:src="@mipmap/icon_delete" />
+            </LinearLayout>
+
+            <TextView
+                n1:id="@id/telnet_cmd_ok"
+                n1:layout_width="wrap_content"
+                n1:layout_height="fill_parent"
+                n1:clickable="true"
+                n1:layout_gravity="center_vertical"
+                n1:layout_marginEnd="11.0dip"
+                n1:gravity="center"
+                n1:text="发送"
+                n1:textColor="@color/table_text_color_uncheck"
+                n1:textSize="@dimen/text_14dp" />
+        </LinearLayout>
+
+        <TableLayout
+            n1:id="@id/telnet_h3c_cmd"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:background="@color/white"
+            n1:orientation="horizontal">
+
+            <TableRow>
+
+                <TextView
+                    n1:id="@id/telnet_log_open"
+                    n1:layout_height="34.0dip"
+                    n1:layout_margin="8.0dip"
+                    n1:layout_weight="1"
+                    n1:background="@drawable/telnet_output_button_select"
+                    n1:gravity="center"
+                    n1:text="打开Log"
+                    n1:textColor="@drawable/telnet_output_textcolor_select"
+                    n1:textSize="@dimen/text_12dp" />
+
+                <TextView
+                    n1:id="@id/telnet_log_close"
+                    n1:layout_height="34.0dip"
+                    n1:layout_margin="8.0dip"
+                    n1:background="@drawable/telnet_output_button_select"
+                    n1:gravity="center"
+                    n1:layout_weight="1"
+                    n1:text="关闭Log"
+                    n1:textColor="@drawable/telnet_output_textcolor_select"
+                    n1:textSize="@dimen/text_12dp" />
+
+                <TextView
+                    n1:id="@id/telnet_log_query"
+                    n1:layout_height="34.0dip"
+                    n1:layout_margin="8.0dip"
+                    n1:background="@drawable/telnet_output_button_select"
+                    n1:gravity="center"
+                    n1:layout_weight="1"
+                    n1:text="查询命令"
+                    n1:textColor="@drawable/telnet_output_textcolor_select"
+                    n1:textSize="@dimen/text_12dp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

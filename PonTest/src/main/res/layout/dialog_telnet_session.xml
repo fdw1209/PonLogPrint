@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:n1="http://schemas.android.com/apk/res/android"
+    xmlns:n2="http://schemas.android.com/apk/res-auto"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    n1:layout_gravity="center"
+    n1:elevation="5.0dip"
+    n2:cardBackgroundColor="@color/white"
+    n2:cardCornerRadius="5.0dip">
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_centerInParent="true"
+        n1:layout_gravity="center"
+        n1:orientation="vertical">
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerVertical="true"
+            n1:layout_marginStart="20.0dip"
+            n1:layout_marginTop="12.0dip"
+            n1:text="创建Telnet连接"
+            n1:textColor="@color/table_wifi_text"
+            n1:textSize="@dimen/text_16sp" />
+
+        <View
+            n1:layout_width="fill_parent"
+            n1:layout_height="1.0px"
+            n1:layout_marginTop="12.0dip"
+            n1:background="@color/divider" />
+
+        <TableLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginEnd="20.0dip"
+            n1:layout_marginStart="20.0dip"
+            n1:layout_marginTop="14.0dip"
+            n1:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    n1:layout_height="wrap_content"
+                    n1:text="地址"
+                    n1:textColor="@color/table_wifi_text"
+                    n1:textSize="@dimen/text_14sp" />
+
+                <EditText
+                    n1:id="@id/telnet_custom_session_addr"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginStart="10.0dip"
+                    n1:hint="请输入对应地址（必填）"
+                    n1:text="@string/ip"
+                    n1:inputType="text"
+                    n1:maxLength="25"
+                    n1:textColor="@color/table_wifi_text"
+                    n1:textSize="@dimen/text_14sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    n1:layout_height="wrap_content"
+                    n1:text="端口"
+                    n1:textColor="@color/table_wifi_text"
+                    n1:textSize="@dimen/text_14sp" />
+
+                <EditText
+                    n1:id="@id/telnet_custom_session_port"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginStart="10.0dip"
+                    n1:hint="请输入对应端口"
+                    n1:text="@string/port"
+                    n1:inputType="number"
+                    n1:maxLength="5"
+                    n1:textColor="@color/table_wifi_text"
+                    n1:textSize="@dimen/text_14sp" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            n1:id="@id/btn_layout"
+            n1:layout_width="fill_parent"
+            n1:layout_height="40.0dip"
+            n1:layout_marginBottom="14.0dip"
+            n1:layout_marginEnd="20.0dip"
+            n1:layout_marginStart="20.0dip"
+            n1:layout_marginTop="14.0dip"
+            n1:orientation="horizontal">
+
+            <TextView
+                n1:id="@id/telnet_add_cancle"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_gravity="center"
+                n1:layout_marginEnd="5.0dip"
+                n1:layout_weight="1.0"
+                n1:clickable="true"
+                n1:focusable="true"
+                n1:background="@drawable/confirm_dialog_cancel_bg"
+                n1:gravity="center"
+                n1:text="取消"
+                n1:textColor="@color/white"
+                n1:textSize="16.0sp" />
+
+            <TextView
+                n1:id="@id/telnet_add_ok"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_gravity="center"
+                n1:clickable="true"
+                n1:focusable="true"
+                n1:layout_marginStart="5.0dip"
+                n1:layout_weight="1.0"
+                n1:background="@drawable/confirm_dialog_bg"
+                n1:gravity="center"
+                n1:text="确定"
+                n1:textColor="@color/white"
+                n1:textSize="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

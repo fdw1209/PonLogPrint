@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:n1="http://schemas.android.com/apk/res/android"
+    xmlns:n2="http://schemas.android.com/apk/res-auto"
+    n1:layout_width="280.0dip"
+    n1:layout_height="wrap_content"
+    n1:elevation="5.0dip"
+    n2:cardBackgroundColor="@color/white"
+    n2:cardCornerRadius="5.0dip">
+
+    <LinearLayout
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerInParent="true"
+        n1:orientation="vertical">
+
+        <RelativeLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="12.0dip">
+
+            <TextView
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_centerVertical="true"
+                n1:layout_marginStart="14.0dip"
+                n1:text="提示"
+                n1:textColor="@color/table_wifi_text"
+                n1:textSize="@dimen/text_16sp" />
+
+            <ImageView
+                n1:id="@id/tv_cancel_dismiss"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_alignParentEnd="true"
+                n1:layout_centerVertical="true"
+                n1:layout_marginEnd="4.0dip"
+                n1:padding="10.0dip"
+                n1:src="@mipmap/icon_delete"
+                n1:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            n1:layout_width="fill_parent"
+            n1:layout_height="1.0px"
+            n1:layout_marginTop="12.0dip"
+            n1:background="@color/divider" />
+
+        <TextView
+            n1:id="@id/tv_message_dialog"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginEnd="14.0dip"
+            n1:layout_marginStart="14.0dip"
+            n1:gravity="center"
+            n1:minHeight="100.0dip"
+            n1:padding="30.0dip"
+            n1:textColor="@color/table_wifi_text"
+            n1:textSize="16.0sp" />
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="50.0dip"
+            n1:orientation="horizontal">
+
+            <TextView
+                n1:id="@id/tv_cancel_dialog"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_gravity="center"
+                n1:layout_margin="5.0dip"
+                n1:layout_weight="1.0"
+                n1:background="@drawable/confirm_dialog_cancel_bg"
+                n1:gravity="center"
+                n1:text="取消"
+                n1:textColor="@color/white"
+                n1:textSize="16.0dip" />
+
+            <TextView
+                n1:id="@id/tv_confirm_dialog"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_gravity="center"
+                n1:layout_margin="5.0dip"
+                n1:layout_weight="1.0"
+                n1:background="@drawable/confirm_dialog_bg"
+                n1:gravity="center"
+                n1:text="确定"
+                n1:textColor="@color/white"
+                n1:textSize="16.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

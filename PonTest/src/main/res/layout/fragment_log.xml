@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/actionBarSize"
+        n1:background="@color/colorPrimary">
+
+        <TextView
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="center"
+            n1:layout_marginEnd="14.0dip"
+            n1:layout_marginStart="14.0dip"
+            n1:text="@string/logs"
+            n1:textAlignment="center"
+            n1:textColor="@color/white"
+            n1:textSize="@dimen/text_20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:orientation="horizontal">
+
+        <android.support.v7.widget.CardView xmlns:n2="http://schemas.android.com/apk/res-auto"
+            n1:id="@id/log_olt_register"
+            n1:clickable="true"
+            n1:focusable="true"
+            n1:layout_width="0.0dip"
+            n1:layout_height="92.0dip"
+            n1:layout_marginBottom="3.0dip"
+            n1:layout_marginStart="20.0dip"
+            n1:layout_marginTop="15.0dip"
+            n1:layout_weight="1.0"
+            n1:elevation="5.0dip"
+            n2:cardBackgroundColor="@color/white"
+            n2:cardCornerRadius="10.0dip">
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="92.0dip"
+                n1:layout_gravity="center"
+                n1:gravity="center">
+
+                <ImageView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_centerVertical="true"
+                    n1:layout_gravity="center"
+                    n1:gravity="center"
+                    n1:src="@mipmap/icon_channel_analysis" />
+
+                <TextView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_gravity="center"
+                    n1:layout_marginStart="25.0dip"
+                    n1:gravity="center"
+                    n1:text="@string/OLT_register"
+                    n1:textColor="@color/find_ap_ssid"
+                    n1:textSize="@dimen/text_16dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:n3="http://schemas.android.com/apk/res-auto"
+            n1:id="@id/log_rms_platform"
+            n1:clickable="true"
+            n1:layout_width="0.0dip"
+            n1:layout_height="92.0dip"
+            n1:layout_marginEnd="20.0dip"
+            n1:layout_marginStart="20.0dip"
+            n1:layout_marginTop="15.0dip"
+            n1:layout_weight="1.0"
+            n1:elevation="5.0dip"
+            n3:cardBackgroundColor="@color/white"
+            n3:cardCornerRadius="10.0dip">
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="92.0dip"
+                n1:layout_gravity="center"
+                n1:gravity="center">
+
+                <ImageView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_gravity="center"
+                    n1:gravity="center"
+                    n1:src="@mipmap/icon_wifi_info" />
+
+                <TextView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_gravity="center"
+                    n1:layout_marginStart="21.0dip"
+                    n1:gravity="center"
+                    n1:text="@string/RMS_table"
+                    n1:textColor="@color/find_ap_ssid"
+                    n1:textSize="@dimen/text_16dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:orientation="horizontal"
+        n1:paddingBottom="2.0dip"
+        n1:weightSum="2.0">
+
+        <android.support.v7.widget.CardView xmlns:n4="http://schemas.android.com/apk/res-auto"
+            n1:id="@id/log_plugin_platform"
+            n1:clickable="true"
+            n1:layout_width="0.0dip"
+            n1:layout_height="92.0dip"
+            n1:layout_marginBottom="3.0dip"
+            n1:layout_marginEnd="20.0dip"
+            n1:layout_marginStart="20.0dip"
+            n1:layout_marginTop="15.0dip"
+            n1:layout_weight="1.0"
+            n1:elevation="5.0dip"
+            n4:cardBackgroundColor="@color/white"
+            n4:cardCornerRadius="10.0dip">
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="92.0dip"
+                n1:layout_gravity="center"
+                n1:gravity="center">
+
+                <ImageView
+                    n1:layout_width="32.0dip"
+                    n1:layout_height="32.0dip"
+                    n1:layout_gravity="center"
+                    n1:gravity="center"
+                    n1:src="@mipmap/icon_roaming" />
+
+                <TextView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_gravity="center"
+                    n1:layout_marginStart="21.0dip"
+                    n1:gravity="center"
+                    n1:text="@string/plugin_platform"
+                    n1:textColor="@color/find_ap_ssid"
+                    n1:textSize="@dimen/text_16dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:n5="http://schemas.android.com/apk/res-auto"
+            n1:id="@id/log_web_config"
+            n1:clickable="true"
+            n1:layout_width="0.0dip"
+            n1:layout_height="92.0dip"
+            n1:layout_marginEnd="20.0dip"
+            n1:layout_marginTop="15.0dip"
+            n1:layout_weight="1.0"
+            n1:elevation="5.0dip"
+            n5:cardBackgroundColor="@color/white"
+            n5:cardCornerRadius="10.0dip">
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="92.0dip"
+                n1:layout_gravity="center"
+                n1:gravity="center">
+
+                <ImageView
+                    n1:layout_width="30.0dip"
+                    n1:layout_height="30.0dip"
+                    n1:layout_gravity="center"
+                    n1:gravity="center"
+                    n1:src="@mipmap/icon_zdy" />
+
+                <TextView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_gravity="center"
+                    n1:layout_marginStart="21.0dip"
+                    n1:gravity="center"
+                    n1:text="@string/web_config"
+                    n1:textColor="@color/find_ap_ssid"
+                    n1:textSize="@dimen/text_16sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    n1:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/actionBarSize"
+        n1:background="@color/colorPrimary">
+
+        <TextView
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:textColor="@color/white"
+            n1:textSize="@dimen/text_20dp"
+            n1:textAlignment="center"
+            n1:layout_gravity="center"
+            n1:layout_marginEnd="14.0dip"
+            n1:layout_marginStart="14.0dip"
+            n1:text="@string/my" />
+    </LinearLayout>
+
+    <ImageView
+        n1:layout_width="96.0dip"
+        n1:layout_height="96.0dip"
+        n1:layout_gravity="center"
+        n1:layout_marginTop="43.0dip"
+        n1:src="@mipmap/ic_launcher" />
+
+    <TextView
+        n1:id="@id/about_version"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_gravity="center"
+        n1:layout_marginTop="20.0dip"
+        n1:text="光猫Log V1.0"
+        n1:textColor="@color/table_wifi_text"
+        n1:textSize="@dimen/text_16sp" />
+
+    <View
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0px"
+        n1:layout_marginTop="29.0dip"
+        n1:background="@color/divider" />
+
+    <RelativeLayout
+        n1:id="@id/my_fragment_about"
+        n1:layout_width="fill_parent"
+        n1:layout_height="39.0dip"
+        n1:clickable="true"
+        n1:background="@color/white">
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerVertical="true"
+            n1:layout_marginStart="20.0dip"
+            n1:text="关于"
+            n1:textColor="@color/table_wifi_text"
+            n1:textSize="@dimen/text_14sp" />
+
+        <ImageView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentEnd="true"
+            n1:layout_centerInParent="true"
+            n1:layout_marginEnd="20.0dip"
+            n1:src="@mipmap/icon_more" />
+    </RelativeLayout>
+
+    <View
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0px"
+        n1:background="@color/divider" />
+
+    <RelativeLayout
+        n1:id="@id/my_fragment_feedback"
+        n1:layout_width="fill_parent"
+        n1:layout_height="39.0dip"
+        n1:background="@color/white"
+        n1:visibility="visible">
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerVertical="true"
+            n1:layout_marginStart="20.0dip"
+            n1:text="反馈"
+            n1:textColor="@color/table_wifi_text"
+            n1:textSize="@dimen/text_14sp" />
+
+        <ImageView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentEnd="true"
+            n1:layout_centerInParent="true"
+            n1:layout_marginEnd="20.0dip"
+            n1:src="@mipmap/icon_more" />
+    </RelativeLayout>
+
+    <View
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0px"
+        n1:background="@color/divider"
+        n1:visibility="gone" />
+
+    <RelativeLayout
+        n1:id="@id/my_fragment_share"
+        n1:layout_width="fill_parent"
+        n1:layout_height="39.0dip"
+        n1:background="@color/white"
+        n1:visibility="gone">
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerVertical="true"
+            n1:layout_marginStart="20.0dip"
+            n1:text="分享"
+            n1:textColor="@color/table_wifi_text"
+            n1:textSize="@dimen/text_14sp" />
+
+        <ImageView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentEnd="true"
+            n1:layout_centerInParent="true"
+            n1:layout_marginEnd="20.0dip"
+            n1:src="@mipmap/icon_more" />
+    </RelativeLayout>
+
+    <View
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0px"
+        n1:background="@color/divider"
+        n1:visibility="visible" />
+
+</LinearLayout>

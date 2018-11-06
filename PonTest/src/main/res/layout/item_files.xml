@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    n1:background="@color/white"
+    n1:orientation="vertical">
+
+    <RelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="66.0dip">
+
+        <ImageView
+            n1:id="@id/servers_sever"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerVertical="true"
+            n1:layout_marginStart="20.0dip"
+            n1:src="@mipmap/icon_server" />
+
+        <TextView
+            n1:id="@+id/file_names"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_centerVertical="true"
+            n1:layout_marginEnd="50.0dip"
+            n1:layout_marginStart="13.0dip"
+            n1:layout_toEndOf="@id/servers_sever"
+            n1:ellipsize="end"
+            n1:maxLines="2"
+            n1:text=" "
+            n1:textColor="@color/table_wifi_text"
+            n1:textSize="@dimen/text_16sp" />
+
+        <ImageView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentEnd="true"
+            n1:layout_centerVertical="true"
+            n1:layout_marginEnd="17.0dip"
+            n1:src="@mipmap/icon_more" />
+    </RelativeLayout>
+
+    <View
+        n1:layout_width="fill_parent"
+        n1:layout_height="1.0px"
+        n1:background="@color/divider" />
+</LinearLayout>

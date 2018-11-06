@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent">
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            n1:id="@id/view_pager"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="1.0" />
+
+        <View
+            n1:layout_width="fill_parent"
+            n1:layout_height="1.0dip"
+            n1:background="@color/divider" />
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="@dimen/table_size"
+            n1:background="@color/table_color"
+            n1:orientation="horizontal">
+
+            <LinearLayout
+                n1:id="@id/main_wifi"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_marginTop="8.0dip"
+                n1:layout_weight="1.0"
+                n1:gravity="center_horizontal"
+                n1:orientation="vertical">
+
+                <ImageView
+                    n1:id="@id/main_wifi_image"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="20.0dip"
+                    n1:src="@mipmap/icon_wifi_blue" />
+
+                <TextView
+                    n1:id="@id/main_wifi_tv"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="8.0dip"
+                    n1:text="@string/wifi"
+                    n1:textColor="@color/table_text_color"
+                    n1:textSize="@dimen/text_12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                n1:id="@id/main_tools"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_marginTop="8.0dip"
+                n1:layout_weight="1.0"
+                n1:gravity="center_horizontal"
+                n1:orientation="vertical">
+
+                <ImageView
+                    n1:id="@id/main_tools_image"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="20.0dip"
+                    n1:src="@mipmap/icon_tools_gray" />
+
+                <TextView
+                    n1:id="@id/main_tools_tv"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="8.0dip"
+                    n1:text="@string/logs"
+                    n1:textColor="@color/table_text_color_uncheck"
+                    n1:textSize="@dimen/text_12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                n1:id="@id/main_my"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_marginTop="8.0dip"
+                n1:layout_weight="1.0"
+                n1:gravity="center_horizontal"
+                n1:orientation="vertical">
+
+                <ImageView
+                    n1:id="@id/main_my_image"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="20.0dip"
+                    n1:src="@mipmap/icon_my_gray" />
+
+                <TextView
+                    n1:id="@id/main_my_tv"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="8.0dip"
+                    n1:text="@string/my"
+                    n1:textColor="@color/table_text_color_uncheck"
+                    n1:textSize="@dimen/text_12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
